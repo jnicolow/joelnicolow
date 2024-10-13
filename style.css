@@ -178,6 +178,7 @@ body {
 
 #projects-section {
   padding: 20px; /* Add padding around the projects section */
+  background-color: wheat;
 }
 
 #projects-container {

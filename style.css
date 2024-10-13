@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  margin: 0;
 }
 
 /* Navbar Styling */
@@ -42,25 +43,35 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  max-width: 1200px;
+  width: 100%;
+  height: 60vh;
   padding-top: 60px; /* Space for fixed navbar */
+  margin: 0 auto;
 }
 
 .left-section {
   flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.right-section {
-  flex: 1;
-  padding: 20px;
+.profile-img {
+  margin-bottom: 10px;
+  max-width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  object-fit: contain;
 }
 
-.profile-img {
-  max-width: 80%;
-  border-radius: 50%;
+.right-section {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -73,13 +84,18 @@ p {
   line-height: 1.6;
 }
 
+/* Social Links */
+.social-links {
+  margin-top: 20px;
+}
+
 .social-links a {
   display: inline-block;
   background-color: #333;
   color: white;
   text-decoration: none;
   padding: 10px 15px;
-  margin-right: 10px;
+  margin-right: 15px;
   border-radius: 5px;
 }
 
@@ -87,98 +103,11 @@ p {
   background-color: #575757;
 }
 
-/* Ensure the content takes up half the screen */
-.main-container {
-  max-width: 1200px;
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  margin: 0 auto;
-}
-
-.left-section img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
-
-
-/* General reset for body and container */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.main-container {
-  display: flex; /* Use flexbox for layout */
-  height: 50vh; /* Set height to half the viewport */
-}
-
-/* Left section for image */
-.left-section {
-  flex: 1; /* Take 1 part of the available space */
-  display: flex; /* Center the image vertically */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center;
-}
-
-/* Profile image styling */
-.profile-img {
-  max-width: 100%; /* Make sure the image is responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Right section for text */
-.right-section {
-  flex: 2; /* Take 2 parts of the available space */
-  padding: 20px; /* Add some padding */
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center content vertically */
-}
-
-/* Navbar styling */
-.navbar {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  background-color: #333; /* Dark background for navbar */
-  margin: 0;
-}
-
-.navbar li {
-  flex: 1; /* Distribute navbar items evenly */
-}
-
-.navbar a {
-  display: block;
-  text-align: center;
-  padding: 14px;
-  color: white; /* White text color */
-  text-decoration: none; /* Remove underline */
-}
-
-.navbar a:hover {
-  background-color: #575757; /* Darker background on hover */
-}
-
-/* Social links styling */
-.social-links {
-  margin-top: 20px; /* Space above social links */
-}
-
-.social-links a {
-  margin-right: 15px; /* Space between links */
-  text-decoration: none; /* Remove underline */
-  color: white; /* Link color */
-}
-
-
-/* Projects */
-
+/* Projects Section */
 #projects-section {
-  padding: 20px; /* Add padding around the projects section */
-  background-color: wheat;
+  padding: 20px;
+  background-color: #575757;
+  color: whitesmoke
 }
 
 #projects-container {
@@ -188,16 +117,16 @@ body {
 
 .project-card {
   display: flex;
-  align-items: center; /* Center thumbnail and text vertically */
-  margin: 10px 0; /* Space between cards */
-  border: 1px solid #ccc; /* Card border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 10px; /* Inner padding */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  align-items: center;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-thumbnail {
-  width: 100px; /* Set a fixed width for thumbnails */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 15px; /* Space between image and text */
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
 }

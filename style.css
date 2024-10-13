@@ -101,3 +101,102 @@ p {
   max-width: 300px;
   height: auto;
 }
+
+
+/* General reset for body and container */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex; /* Use flexbox for layout */
+  height: 50vh; /* Set height to half the viewport */
+}
+
+/* Left section for image */
+.left-section {
+  flex: 1; /* Take 1 part of the available space */
+  display: flex; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center;
+}
+
+/* Profile image styling */
+.profile-img {
+  max-width: 100%; /* Make sure the image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Right section for text */
+.right-section {
+  flex: 2; /* Take 2 parts of the available space */
+  padding: 20px; /* Add some padding */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+}
+
+/* Navbar styling */
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  background-color: #333; /* Dark background for navbar */
+  margin: 0;
+}
+
+.navbar li {
+  flex: 1; /* Distribute navbar items evenly */
+}
+
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar a:hover {
+  background-color: #575757; /* Darker background on hover */
+}
+
+/* Social links styling */
+.social-links {
+  margin-top: 20px; /* Space above social links */
+}
+
+.social-links a {
+  margin-right: 15px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  color: white; /* Link color */
+}
+
+
+/* Projects */
+
+#projects-section {
+  padding: 20px; /* Add padding around the projects section */
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+}
+
+.project-card {
+  display: flex;
+  align-items: center; /* Center thumbnail and text vertically */
+  margin: 10px 0; /* Space between cards */
+  border: 1px solid #ccc; /* Card border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Inner padding */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.project-thumbnail {
+  width: 100px; /* Set a fixed width for thumbnails */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Space between image and text */
+}
